@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.3.21)  21 FEB 2019 12:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.3.21)  21 FEB 2019 14:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1107,33 +1107,33 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
 <Figures/example.png, id=1, 656.4525pt x 737.75626pt>
 File: Figures/example.png Graphic file (type png)
 <use Figures/example.png>
-Package pdftex.def Info: Figures/example.png  used on input line 62.
+Package pdftex.def Info: Figures/example.png  used on input line 60.
 (pdftex.def)             Requested size: 213.39568pt x 239.82422pt.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 63.
+(Font)              scaled to size 10.07397pt on input line 61.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 63.
+(Font)              scaled to size 7.63599pt on input line 61.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 63.
+(Font)              scaled to size 5.51999pt on input line 61.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 63.
+(Font)              scaled to size 10.07397pt on input line 61.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 63.
+(Font)              scaled to size 7.63599pt on input line 61.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 63.
+(Font)              scaled to size 5.51999pt on input line 61.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 66.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 64.
  [1
 
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Figur
 es/example.png>] [2] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 9812 strings out of 492982
- 178801 string characters out of 6132527
- 352063 words of memory out of 5000000
+ 9819 strings out of 492982
+ 178868 string characters out of 6132527
+ 354063 words of memory out of 5000000
  13180 multiletter control sequences out of 15000+600000
- 97248 words of font info for 104 fonts, out of 8000000 for 9000
+ 99051 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,18n,64p,8815b,411s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/en
@@ -1144,7 +1144,7 @@ rier/fourier-ms.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/adobe/utopi
 a/putb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/adobe/utopia/putr8
 a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
 
-Output written on main.pdf (2 pages, 749570 bytes).
+Output written on main.pdf (2 pages, 752176 bytes).
 PDF statistics:
  39 PDF objects out of 1000 (max. 8388607)
  26 compressed objects within 1 object stream
