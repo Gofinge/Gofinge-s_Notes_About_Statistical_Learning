@@ -1,2 +1,2 @@
-# Gofinge_Note_in_Statistical_Learning
-1. Expectation-maximization (EM) algorithm
+# Gofinge Note in Statistical Learning
+1. Expectation-maximization (EM) algorithm (in edit)
