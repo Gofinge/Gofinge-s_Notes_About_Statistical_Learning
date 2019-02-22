@@ -1,1 +1,1 @@
-# Gofinge_Note_for_Statisticla_Learning
+# Gofinge's_Notes_About_Statisticla_Learning
