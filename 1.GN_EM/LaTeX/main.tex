@@ -29,15 +29,14 @@
 
 \title{	
 	\normalfont\normalsize
+	\textsc{Gofinge's Notes}\\ % Your university, school and/or department name(s)
+	\vspace{25pt} % Whitespace
 	\rule{\linewidth}{0.5pt}\\ % Thin top horizontal rule
 	\vspace{20pt} % Whitespace
-	{\huge Gofinge Note for EM algorithm}\\ % The assignment title
+	{\huge Expectation-Maximization Algorithm}\\ % The assignment title
 	\vspace{12pt} % Whitespace
 	\rule{\linewidth}{2pt}\\ % Thick bottom horizontal rule
-	\vspace{12pt} % Whitespace
 }
-
-\author{\LARGE Xiaoyang Wu} % Your name
 
 \date{\normalsize February 21, 2019} % Today's date (\today) or a custom date
 
@@ -64,7 +63,8 @@ Let's start with an example from Chuong B Do \& Serafim Batzoglou‘s tutorial p
 If we can figure out whether the coin we flipped is A or B, we can estimate $\theta_A$ and $\theta_B$ through one of our most familiar friends, \textbf{MLE}.(Figure 1.1a) But actually, since we can not figure it out, MLE will not work in this situation. Then EM algorithm come on the stage. EM algorithm is simple because it just contain two steps in the Iteration and EM algorithm is complex is complex for its mathematical proof and further stretch in theory and application (Figure 1.1b) andI will explain the two steps in the following section.
 
 \subsection{Two steps in iteration of EM}
-\textbf{Notation:} Given the statistical model which generates a set X of observed data(50 samples in coin-flipping experiment), a set of unobserved latent data or missing values Z(the coin is A or B), and a vector of unknown parameters $\theta$, along with a likelihood function $L(\theta; X, Z) = p(X, Z| \theta)$,  and the marginal likelihood function of the observed data is given by:
+
+ Given the statistical model which generates a set X of observed data(5 samples in coin-flipping experiment, and $x_i$ = \# of heads using the $1^{st}$ coin), a set of unobserved latent data or missing values Z(the coin is A or B), and a vector of unknown parameters $\theta$, along with a likelihood function $L(\theta; X, Z) = p(X, Z| \theta)$,  and the marginal likelihood function of the observed data is given by:
 
 $$L(\theta; X) = p(X| \theta) = \int p(X, Z| \theta)dZ$$
 
@@ -76,11 +76,11 @@ Then the EM algorithm seeks to find the MLE of the marginal likelihood by iterat
 
 $$Q(\theta|\theta^{(t)}) = E_{Z|X,\theta^{(t)}}[logL(\theta; X, Z)] = \int P(Z|X, \theta^{(t)}) ln P(X, Z| \theta)dz $$
 
-\textit{note:} In discrete situation, we replace $\int$ by $\sum$.  In the coin-flipping experiment, we assume $\theta^{(0)} = (\theta_A^{(0)}, \theta_B^{(0)}) = (0.60, 0.50)$. Since the results of the first ten independent tosses is X = 5 ({H: 5, T: 5}), we have $P(Z = A, X_1=5, \theta^{(0)}) = 0.6^5 \cdot 0.4^5$ and $P(Z = B, X_1=5, \theta^{(0)}) = 0.5^{10}$. Further,
+\textit{note:} In discrete situation, we replace $\int$ by $\sum$.  In the coin-flipping experiment, we assume $\theta^{(0)} = (\theta_A^{(0)}, \theta_B^{(0)}) = (0.60, 0.50)$. Since the results of the first ten independent tosses is $x_1$ = 5 (\{H: 5, T: 5\}), we have $P(Z = A, X=x_1, \theta^{(0)}) = 0.6^5 \cdot 0.4^5$ and $P(Z = B, X=x_1, \theta^{(0)}) = 0.5^{10}$. Further,
 
-$$P(Z = A|X = 5, \theta^{(0)}) = \frac{P(Z = A, X=5, \theta^{(0)})}{P(Z = A, X=5, \theta^{(0)}) + P(Z = A, X=5, \theta^{(0)})} \approx 0.45,$$ 
+$$P(Z = A|X = x_1, \theta^{(0)}) = \frac{P(Z = A, X=5, \theta^{(0)})}{P(Z = A, X=5, \theta^{(0)}) + P(Z = A, X=5, \theta^{(0)})} \approx 0.45,$$ 
 
-$$P(Z = B|X = 5, \theta^{(0)}) = \frac{P(Z = B, X=5, \theta^{(0)})}{P(Z = B, X=5, \theta^{(0)}) + P(Z = A, X=5, \theta^{(0)})} \approx 0.55$$
+$$P(Z = B|X = x_1, \theta^{(0)}) = \frac{P(Z = B, X=5, \theta^{(0)})}{P(Z = B, X=5, \theta^{(0)}) + P(Z = A, X=5, \theta^{(0)})} \approx 0.55$$
 
 
 
